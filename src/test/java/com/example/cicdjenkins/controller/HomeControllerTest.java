@@ -15,7 +15,7 @@ class HomeControllerTest {
     private HomeController homeController;
 
     @ParameterizedTest
-    @ValueSource(strings = {"John", "Bob", "Alex"})
+    @ValueSource(strings = {"John", "Bob", "Alex", "Kek"})
     void getHello(String name) {
         Assertions.assertEquals("Hello, " + name + "!!", homeController.getHello(name).getBody());
     }
