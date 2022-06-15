@@ -14,7 +14,7 @@ public class HomeController {
     @GetMapping("/")
     public ResponseEntity<String> getHello(@RequestParam(required = false) String name) {
         String s = name != null ? name : "guest";
-        return new ResponseEntity<>("Hello, " + s + "!!", HttpStatus.OK);
+        return new ResponseEntity<>("Welcome, " + s + "!!", HttpStatus.OK);
     }
 
 }
