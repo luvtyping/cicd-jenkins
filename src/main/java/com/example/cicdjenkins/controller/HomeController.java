@@ -13,7 +13,7 @@ public class HomeController {
 
     @GetMapping("/")
     public ResponseEntity<String> getHello(@RequestParam(required = false) String name) {
-        String s = name != null ? name :  "guest";
+        String s = name != null ? name : "guest";
         return new ResponseEntity<>("Welcome, " + s + "!", HttpStatus.OK);
     }
 
